@@ -18,7 +18,7 @@ import java.util.UUID;
 
 @RestController
 @RequestMapping("/api/products")
-@CrossOrigin(origins="*")
+@CrossOrigin(origins = "http://localhost:30082") // 👈 allow frontend requests
 public class ProductController {
 
     private final ProductRepository productRepository;
